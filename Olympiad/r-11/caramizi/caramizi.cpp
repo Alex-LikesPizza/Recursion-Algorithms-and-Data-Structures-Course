@@ -11,7 +11,7 @@ int main(){
   
 
   fin.close();
-  ofstream.close();
+  fout.close();
 
   return 0;
 }
