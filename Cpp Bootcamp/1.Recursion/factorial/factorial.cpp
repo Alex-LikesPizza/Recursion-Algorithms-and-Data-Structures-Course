@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 int factorial(int i){
   if(i == 0) return 1;
   // - head recursion
@@ -15,7 +17,7 @@ int tail_factorial(int i, int acc = 1){
 }
 
 int main(){
-  std::cout << factorial(10);
+  cout << factorial(10);
 
   return 0;
 }
