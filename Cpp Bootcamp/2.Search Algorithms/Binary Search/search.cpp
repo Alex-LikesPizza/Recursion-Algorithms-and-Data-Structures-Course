@@ -1,6 +1,6 @@
 #include <iostream>
 
-using std::cout;
+using namespace std;
 
 int search(int array[], int min, int max, int n){
   
