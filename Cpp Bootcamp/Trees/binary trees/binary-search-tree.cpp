@@ -7,19 +7,19 @@ using namespace std;
 struct Node{
   Node* leftChild;
   Node* rightChild;
-  Node* parent;
   int value;
 
   Node(int val){
-    parent = nullptr;
     leftChild = nullptr;
     rightChild = nullptr;
     value = val;
   }
 
   ~Node(){
-    delete leftChild;
-    delete rightChild;
+    if(leftChild)
+      delete leftChild;
+    if(rightChild)
+      delete rightChild;
   }
 
 };
@@ -39,14 +39,12 @@ class BinaryTreeUtils{
       if(value < node->value){
         if(node->leftChild == nullptr){ 
           node->leftChild = new Node(value);
-          node->leftChild->parent = node;
         }
         else insert(node->leftChild, value);
       }
       else if(value > node->value){
         if(node->rightChild == nullptr){
           node->rightChild = new Node(value);
-          node->rightChild->parent = node;
         }
         else insert(node->rightChild, value);
       }
@@ -74,40 +72,16 @@ class BinaryTreeUtils{
 
       if(node->rightChild != nullptr)
         traverse(node->rightChild);
-  }
+    }
+
     void remove(Node* rootNode, int data){
       if(rootNode == nullptr){
-        cout << "Node not found" << endl;
+        cout << "Tree is Empty" << endl;
         return;
       }
-
       Node* node = findNode(rootNode, data);
-      
-      if(node->leftChild == nullptr && node->rightChild == nullptr){
-        delete node;
-        return;
-      }
 
-      if(node->leftChild == nullptr){
-        if(node->parent->rightChild == node){
-          node->parent->rightChild = node->rightChild;
-          delete node;
-        }
-        else{
-          node->parent->leftChild = node->rightChild;
-          delete node;
-        }
-      }
-      if(node->rightChild == nullptr){
-        if(node->parent->rightChild == node){
-          node->parent->rightChild = node->leftChild;
-          delete node;
-        }
-        else{
-          node->parent->leftChild = node->leftChild;
-          delete node;
-        }
-      }
+      
     }
 
 
@@ -132,7 +106,9 @@ int main(){
 
   
   btu.remove(root, 1); // unfinished
-  
+  cout << root->leftChild->value;
+
+
   delete root;
   fin.close();
   fout.close();
