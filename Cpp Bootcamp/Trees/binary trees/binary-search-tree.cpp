@@ -25,13 +25,23 @@ struct Node{
 };
 
 class BinaryTreeUtils{
-  private:
-    Node* findNode(Node* node, int data){
-      if(data < node->value)
+  public:
+    Node* findNode(Node* node, int data, bool parent = false){
+      if(!node->leftChild && !node->rightChild){
+        cout << "Node not found" << endl;
+        return nullptr;
+      }
+      if(data < node->value){
+        if(node->leftChild->value == data)
+          return (parent? node : node->leftChild);
         return findNode(node->leftChild, data);
-      else if(data > node->value)
+      }
+      else if(data > node->value){
+        if(node->rightChild->value == data)
+          return (parent? node : node->rightChild);
         return findNode(node->rightChild, data);
-      else return node;
+      }
+      return node;
     }
 
   public:
@@ -79,7 +89,26 @@ class BinaryTreeUtils{
         cout << "Tree is Empty" << endl;
         return;
       }
-      Node* node = findNode(rootNode, data);
+      Node* nodeParent = findNode(rootNode, data, true);
+      bool nodeIsLeftOfParent; Node* node;
+      if(nodeParent->leftChild->value == data){
+        nodeIsLeftOfParent = true;
+        node = nodeParent->leftChild;
+      }
+      else{
+        nodeIsLeftOfParent = false;
+        node = nodeParent->rightChild;
+      }
+
+      if(!node->leftChild && !node->rightChild){
+        if(nodeIsLeftOfParent)
+          nodeParent->leftChild = nullptr;
+        else 
+          nodeParent->rightChild = nullptr;
+        delete node;
+      }
+      
+
 
       
     }
@@ -104,10 +133,8 @@ int main(){
     btu.insert(root, value);
   }
 
-  
-  btu.remove(root, 1); // unfinished
-  cout << root->leftChild->value;
-
+  cout << root->leftChild->rightChild->rightChild->value << endl;
+  // btu.remove(root, 3);
 
   delete root;
   fin.close();
