@@ -132,7 +132,7 @@ int main(){
     int value; fin >> value;
     btu.insert(root, value);
   }
-
+  // i give up for now...
   cout << root->leftChild->rightChild->rightChild->value << endl;
   // btu.remove(root, 3);
 
