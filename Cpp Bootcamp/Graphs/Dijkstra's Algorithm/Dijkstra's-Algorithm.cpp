@@ -67,13 +67,14 @@ int main(){
   // }
   findPath(from, n, goal);
 
-  cout << "cost: " << cost[goal] << endl;
+  fout << "cost: " << cost[goal] << endl;
   
   int currentNode = goal;
   while(currentNode != from){
-    cout << currentNode << " ";
+    fout << currentNode << " ";
     currentNode = source[currentNode];
   }
+  fout << from;
 
 
 
