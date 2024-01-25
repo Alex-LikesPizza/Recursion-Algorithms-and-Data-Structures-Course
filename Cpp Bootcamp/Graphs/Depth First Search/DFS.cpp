@@ -40,7 +40,7 @@ int main(){
     nodes[nodeLink1].neighborsId.push_back(nodeLink2);
   }
 
-  findPath(from, 0);
+  findPath(from, to);
   cout << existsPath;
 
   fin.close();
