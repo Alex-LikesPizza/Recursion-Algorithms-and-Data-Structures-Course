@@ -1,0 +1,7 @@
+02.08.23: Started cpp from scratch (kinda)
+  I started a course from scratch to deepen my knowledge of cpp.
+  It's not advanced cpp, just cpp covered in a deeper way.
+  This will enable me to fill in the gaps from my chaotic style of learning.
+
+  Learned: Structure of C++, preprocessing, variables/constants, arrays/vectors,
+           statements and operators.
