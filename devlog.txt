@@ -1,7 +1,25 @@
-02.08.23: Started cpp from scratch (kinda)
+08.02.23: Started cpp from scratch (kinda)
   I started a course from scratch to deepen my knowledge of cpp.
   It's not advanced cpp, just cpp covered in a deeper way.
   This will enable me to fill in the gaps from my chaotic style of learning.
 
   Learned: Structure of C++, preprocessing, variables/constants, arrays/vectors,
            statements and operators.
+02.03.23:
+  Did some reorganizing.
+
+  Learned:
+  C++ Loops
+    for loops
+    for-range loops
+    while
+    do-while
+    break
+    continue
+
+  Strings.
+    C-style trings
+    C++ strings
+    cctype library
+    cstring library
+    string library
