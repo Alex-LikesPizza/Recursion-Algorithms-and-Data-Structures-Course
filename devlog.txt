@@ -3,13 +3,12 @@
   It's not advanced cpp, just cpp covered in a deeper way.
   This will enable me to fill in the gaps from my chaotic style of learning.
 
-  Learned: Structure of C++, preprocessing, variables/constants, arrays/vectors,
-           statements and operators.
+  Learned the structure of C++ files, preprocessing, variables/constants, arrays/vectors,
+  statements and operators.
 02.03.23:
   Did some reorganizing.
 
-  Learned:
-  C++ Loops
+  C++ Loops:
     for loops
     for-range loops
     while
@@ -17,9 +16,16 @@
     break
     continue
 
-  Strings.
+  Strings:
     C-style trings
     C++ strings
     cctype library
     cstring library
     string library
+05.03.23:
+  Functions:
+    structure
+    overloading
+    prototypes
+    constant parameters
+    default parameter value
