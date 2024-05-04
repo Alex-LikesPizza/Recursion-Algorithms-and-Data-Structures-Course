@@ -22,7 +22,6 @@ int main(){
   cout << "ispunct(c) - True if is a punctuation character: " << boolalpha << punct << endl;
   cout << "isspace(c) - True if is a white space          : " << boolalpha << space << endl;
   cout << "isprint(c) - True if is a printable character  : " << boolalpha << print << endl;
-
   cout << "------------------------------------------------------" << endl;
 
   char ctolower = tolower(c);
