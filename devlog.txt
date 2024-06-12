@@ -30,3 +30,13 @@
     constant parameters
     default parameter value
     using functions
+12.06.23:
+  Functions:
+    stack overflow
+    inline functions
+  Pointers & references:
+    pointers
+    assigning pointers
+    dereferencing pointers
+    arrays and pointers
+    dynamic arrays with pointers

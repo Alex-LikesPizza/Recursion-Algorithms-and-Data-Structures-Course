@@ -55,7 +55,7 @@ int print(int n, double d){
 //   for(int i = 0; i < size; i++){
 //     cout << arr[i];
 //   }
-//   arr[0] = 2; // bug... will change arr[0] to 2 if called
+//   arr[0] = 2; // bug... will change arr[0] to 2 if called (even if not intended)
 // };
 void printArray(const int arr[], size_t size){
   for(int i = 0; i < size; i++){
