@@ -4,6 +4,9 @@
 
 using namespace std;
 
+void double_value(int* value_ptr);
+int* create_array(size_t size, int defaultValue = 0);
+
 int main(){
   int* int_ptr {nullptr}; // initializing a pointer
 
@@ -42,7 +45,7 @@ int main(){
                             // scores and score_ptr are now equivalent
   scores[0] = 93; // changes the first element of scores to 93
   score_ptr[0] = 92; // changes the first element of scores to 92
-  cout << *scores; // 92
+  // cout << *scores; // 92
   
   // Subscript Notation
   scores[0]; // access the first element of the array
@@ -51,4 +54,60 @@ int main(){
   // Offset Notation
   *scores; // access the first element of the array
   *(scores + 1); // access the second element of the array
+
+  //-------------------- Pointer Arithmetics --------------------//
+
+  int arr[] {0, 1, 2, 3, 4, 5};
+  int* arr_ptr = arr; // ptr points to first element of array (0)
+  arr_ptr++; // ptr points to second element of array (1)
+  arr_ptr--; // ptr points to first element of array (0)
+  arr_ptr += 5; // ptr points to element indexed 5 (5)
+  // cout << *arr_ptr;
+
+
+  int* arr_ptr1 {&arr[1]};
+  int* arr_ptr2 {&arr[2]};
+  int* arr_ptr3 {&arr[1]};
+
+  cout << (arr_ptr1 == arr_ptr2) << endl; // false
+  cout << (arr_ptr1 == arr_ptr3) << endl; // true
+  cout << (arr_ptr2 > arr_ptr3) << endl; // true
+
+  //-------------- Constant Pointers ------------//
+
+  const int* constant_data {arr};
+  // *constant_data = 2; // Error
+  constant_data = {arr + 1}; // ok
+
+  int *const constant_ptr {arr};
+  *constant_ptr = 2; // ok
+  // constant_ptr = arr + 1; // Error
+
+  const int* const constant_ptr_and_data {arr};
+  // *constant_data = 2; // Error
+  // constant_ptr = arr + 1; // Error
+  
+  //--------------------- Pointers in functions ----------------------//
+
+  int value = 10;
+  int* value_ptr = &value;
+  double_value(&value); // ok
+  double_value(value_ptr); // ok
+  // cout << value << endl; // 40
+
+  int* heapArr = create_array(10); // create an array with a function
+  delete [] heapArr;
+
+}
+
+void double_value(int* value_ptr){
+  *value_ptr *= 2;
+}
+
+int* create_array(size_t size, int defaultValue = 0){
+  int* arr = new int[size];
+  for(int i = 0; i < size; i++){
+    *(arr + i) = defaultValue;
+  }
+  return arr;
 }
