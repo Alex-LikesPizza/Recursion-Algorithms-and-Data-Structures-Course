@@ -34,14 +34,27 @@
   Functions:
     stack overflow
     inline functions
-  Pointers & references:
+  Pointers:
     pointers
     assigning pointers
     dereferencing pointers
     arrays and pointers
     dynamic arrays with pointers
 13.06.23:
-  Pointers & references:
+  Pointers & References:
     pointer arithmetics
     "const" and pointers
     functions and pointers
+14.06.23:
+  References:
+    l-values and r-values
+    debugger
+    references
+  OOP - Classes:
+    class definition
+    using class
+    class pointer
+    arrow operator
+    public, private, protected
+    shallow copy and deep copy
+    

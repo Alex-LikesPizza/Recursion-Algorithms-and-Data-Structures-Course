@@ -6,14 +6,15 @@ using namespace std;
 
 void double_value(int* value_ptr);
 int* create_array(size_t size, int defaultValue = 0);
+int* dangling_ptr_maker();
 
 int main(){
   int* int_ptr {nullptr}; // initializing a pointer
 
   int int_var {10};
   int_ptr = &int_var;  // assigning a value
-  
-  *int_ptr = 20; // derefrence a pointer
+
+  *int_ptr = 20; // dereference a pointer
   // cout << *int_ptr << endl; // 20
 
   //-------------------------------------------------------//
@@ -87,7 +88,7 @@ int main(){
   // *constant_data = 2; // Error
   // constant_ptr = arr + 1; // Error
   
-  //--------------------- Pointers in functions ----------------------//
+  //--------------------- Pointers in Functions ----------------------//
 
   int value = 10;
   int* value_ptr = &value;
@@ -97,14 +98,28 @@ int main(){
 
   int* heapArr = create_array(10); // create an array with a function
   delete [] heapArr;
+  // -------------------- Pointer Pitfalls ---------------------//
 
+  int* uninitialized_ptr; // pointing anywhere
+  // *uninitialized_ptr = 2; 
+
+  cout << *dangling_ptr_maker(); // dangling ptr
+
+  int* new_ptr = new int; // if new_ptr failed to allocate memory, program will crash
+  
+}
+
+int* dangling_ptr_maker(){
+  int returned = 99; // local scope, memory freed on return
+  int* returned_ptr = &returned;
+  return returned_ptr;
 }
 
 void double_value(int* value_ptr){
   *value_ptr *= 2;
 }
 
-int* create_array(size_t size, int defaultValue = 0){
+int* create_array(size_t size, int defaultValue){
   int* arr = new int[size];
   for(int i = 0; i < size; i++){
     *(arr + i) = defaultValue;
