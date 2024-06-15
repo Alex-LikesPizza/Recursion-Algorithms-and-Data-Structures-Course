@@ -14,10 +14,10 @@ int getDefaultN(int n = 0){
 }
 
 // Overloading Functions
-void print(int n);
-void print(int n, int r);
-void print(string s);
-int print(int n, double d); 
+inline void print(int n); // inline - "places" the code from within the function wherever it is called
+inline void print(int n, int r);
+inline void print(string s);
+inline int print(int n, double d); 
 // int print(int n); -error
 // int print(int n, float f = 2); - runtime error 
 
@@ -26,7 +26,6 @@ void printArray(int arr[], size_t size);
 
 int main(){
   
-  
   return 0;
 }
 
@@ -34,19 +33,19 @@ int getN(int n){
   return n;
 }
 
-void print(){
+inline void print(){
   cout << "Hello World" << endl;
 }
-void print(int n){
+inline void print(int n){
   cout << n << endl;
 }
-void print(int n, int r){
+inline void print(int n, int r){
   cout << n << ' ' << r << endl;
 }
-void print(string s){
+inline void print(string s){
   cout << s << endl;
 }
-int print(int n, double d){
+inline int print(int n, double d){
   cout << "Returning " << n << " + " << d << endl;
   return n + d;
 }

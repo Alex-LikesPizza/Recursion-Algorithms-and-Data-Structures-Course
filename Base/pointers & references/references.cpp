@@ -4,6 +4,9 @@
 using namespace std;
 
 int main(){
+
+  // l-value references
+
   // A reference is a "destructured pointer"
   // aka a variable with the same address as another variable 
   int var1 = 100;
@@ -24,5 +27,16 @@ int main(){
   
   const int& const_value = 0;
   // const_value = 2; //  Error
+
+  // r-value references
+  int i = 10;
+  
+  int& l_ref = i;
+  // int& l_ref2 = 2; // Error. Must be an l-value
+
+  int&& r_ref = 10;
+  // int&& r_ref2 = i; // Error. Must be an r-value
+  
+  r_ref = 3; // ok
 
 }

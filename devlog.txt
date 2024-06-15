@@ -17,7 +17,7 @@
     continue
 
   Strings:
-    C-style trings
+    C-style strings
     C++ strings
     cctype library
     cstring library
@@ -48,13 +48,22 @@
 14.06.23:
   References:
     l-values and r-values
-    debugger
-    references
-  OOP - Classes:
+    l-value references
+  Classes:
     class definition
     using class
     class pointer
     arrow operator
     public, private, protected
+    constructors / destructors
     shallow copy and deep copy
+15.06.23:
+  References:
+    r-value references
+  Classes:
+    Move constructors
+    const object
+    static member
+    class friend
+    
     
