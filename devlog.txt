@@ -65,5 +65,12 @@
     const object
     static member
     class friend
-    
+16.06.23:
+  Classes:
+    Operator overloading
+    Operator overloading chain
+    copy assignment
+    move assignment
+    member/non-member operator overloading
+
     
