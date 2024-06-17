@@ -1,5 +1,5 @@
 #ifndef _GAME_H_ // this or #pragma once
-#define _ACCOUNT_H_ 
+#define _GAME_H_ 
 
 class Game{
   private:
