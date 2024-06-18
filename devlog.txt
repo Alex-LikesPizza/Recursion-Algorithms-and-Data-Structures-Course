@@ -1,13 +1,13 @@
-08.02.23: Started cpp from scratch (kinda)
-  I started a course from scratch to deepen my knowledge of cpp.
-  It's not advanced cpp, just cpp covered in a deeper way.
-  This will enable me to fill in the gaps from my chaotic style of learning.
+I started a course from scratch to deepen my knowledge of cpp.
 
-  Learned the structure of C++ files, preprocessing, variables/constants, arrays/vectors,
-  statements and operators.
+08.02.23: Started cpp from scratch
+  Introduction:
+    Structure of C++ files 
+    preprocessing 
+    variables/constants
+    arrays/vectors
+    statements and operators
 02.03.23:
-  Did some reorganizing.
-
   C++ Loops:
     for loops
     for-range loops
@@ -15,7 +15,6 @@
     do-while
     break
     continue
-
   Strings:
     C-style strings
     C++ strings
@@ -72,5 +71,25 @@
     copy assignment
     move assignment
     member/non-member operator overloading
+17.06.23:
+  Classes:
+    Inheritance
+    Multiple Inheritance
+    (has-a) or (is-a)
+    public/private/protected
+18.06.23
+  Polymorphism:
+    Compile-time polymorphism
+    Run-time polymorphism
+    virtual / override
+    virtual destructors
+    final
+    pure virtual functions
+    abstract / concrete class
+    creating interfaces
+  Smart Pointers:
+    unique_ptr, shared_ptr, weak_ptr
+    weak_ptr use case
+    custom deleters
 
     

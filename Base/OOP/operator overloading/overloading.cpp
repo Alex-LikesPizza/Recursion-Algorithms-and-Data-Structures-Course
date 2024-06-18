@@ -132,10 +132,6 @@ int main(){
   // CharArray larry("Larry");
   // CharArray stooge {larry};
 
-  // empty.display();
-  // larry.display();
-  // stooge.display();
-
   // empty = larry;
   // empty.display();
   // empty = "Hello world";
