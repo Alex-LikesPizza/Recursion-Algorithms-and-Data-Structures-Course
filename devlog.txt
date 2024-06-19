@@ -91,5 +91,29 @@ I started a course from scratch to deepen my knowledge of cpp.
     unique_ptr, shared_ptr, weak_ptr
     weak_ptr use case
     custom deleters
-
+19.06.23
+  Exception Handling:
+    try/catch/throw
+    std::exception
+    creating custom exception classes
+  I/O Manipulation:
+    persistent/nonpersistent manipulators
+    boolalpha/noboolalptha
+    dec/oct/hex
+    showbase/noshowbase
+    setprecision
+    defaultfloat/fixed/scientific
+    showpos/noshowpos
+    uppercase/nouppercase
+    setw/setfill/left/right
+  Files:
+    ifstream/ofstream
+    ios::trunc/app/ate
+  String Streams:
+    stringstream
+    istringstream
+    ostringsteam
+  Templates:
+    template syntax
+    template with custom class
     
