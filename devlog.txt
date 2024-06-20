@@ -115,5 +115,9 @@ I started a course from scratch to deepen my knowledge of cpp.
     ostringsteam
   Templates:
     template syntax
-    template with custom class
-    
+    function templates
+20.06.23
+  Templates:
+    class templates
+  STL:
+    algorithms
