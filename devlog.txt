@@ -119,5 +119,13 @@ I started a course from scratch to deepen my knowledge of cpp.
 20.06.23
   Templates:
     class templates
+20.06.23
   STL:
     algorithms
+21.06.23
+  Lambda functions:
+    lambda syntax
+    lambda mutable keyword
+    capture by reference / value
+    capture this
+  Enumerators
