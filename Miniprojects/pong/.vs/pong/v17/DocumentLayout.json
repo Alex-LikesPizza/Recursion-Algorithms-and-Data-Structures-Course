@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\utility.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|solutionrelative:utility.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|solutionrelative:renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\win32_platform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|solutionrelative:win32_platform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "utility.cpp",
+              "DocumentMoniker": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\utility.cpp",
+              "RelativeDocumentMoniker": "utility.cpp",
+              "ToolTip": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\utility.cpp",
+              "RelativeToolTip": "utility.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-23T16:25:48.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "renderer.cpp",
+              "DocumentMoniker": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\renderer.cpp",
+              "RelativeDocumentMoniker": "renderer.cpp",
+              "ToolTip": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\renderer.cpp",
+              "RelativeToolTip": "renderer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-23T16:05:54.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "win32_platform.cpp",
+              "DocumentMoniker": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\win32_platform.cpp",
+              "RelativeDocumentMoniker": "win32_platform.cpp",
+              "ToolTip": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\win32_platform.cpp",
+              "RelativeToolTip": "win32_platform.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-23T14:17:16.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
