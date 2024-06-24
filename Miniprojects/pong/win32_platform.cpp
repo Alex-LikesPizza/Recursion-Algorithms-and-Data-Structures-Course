@@ -85,7 +85,7 @@ int  WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int 
 
         // Simulate
         clear_screen();
-        draw_rect(50, 50, 200, 500, 0x333333);
+        draw_rect(0, 0, 50, 50, 0xFF0000);
 
         // Render
         StretchDIBits(
