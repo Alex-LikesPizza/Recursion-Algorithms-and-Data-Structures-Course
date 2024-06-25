@@ -2,6 +2,7 @@
 #include <winuser.h>
 #include "utility.cpp"
 
+
 #pragma comment(lib, "Gdi32.lib")
 
 global_variable bool running = true;
@@ -15,7 +16,10 @@ struct Render_State {
 
 global_variable Render_State render_state;
 
+
 #include "renderer.cpp"
+#include "platform_common.cpp"
+#include "game.cpp"
 
 LRESULT CALLBACK window_callback(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
     LRESULT result = 0;
@@ -75,18 +79,46 @@ int  WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int 
         NULL                         // Additional application data
     );
     HDC hdc = GetDC(window);
+
+    Input input = {};
     while (running) {
         // Input
         MSG message;
+
+        for (int i = 0; i < BUTTON_COUNT; i++) {
+            input.buttons[i].changed = false;
+        }
         while (PeekMessage(&message, window, 0, 0, PM_REMOVE)) {
-            TranslateMessage(&message);
-            DispatchMessage(&message);
+            switch (message.message) {
+
+                case WM_KEYUP:
+                case WM_KEYDOWN: {
+                    u32 vk_code = (u32) message.wParam;
+                    bool is_down = ((message.lParam & (1 << 31)) == 0);
+
+#define process_button(b, vk)\
+case vk: {\
+    input.buttons[BUTTON_UP].is_down = is_down;\
+    input.buttons[BUTTON_UP].changed = true;\
+} break;
+                    switch (vk_code) {
+                        process_button(BUTTON_UP, VK_UP);
+                        process_button(BUTTON_DOWN, VK_DOWN);
+                        process_button(BUTTON_LEFT, VK_LEFT);
+                        process_button(BUTTON_RIGHT, VK_RIGHT);
+                    }
+                } break;
+                default: {
+                    TranslateMessage(&message);
+                    DispatchMessage(&message);
+                }
+            }
+            
         }
 
         // Simulate
         clear_screen();
-        draw_rect(0, 0, 50, 50, 0xFF0000);
-
+        simulate_game(&input);
         // Render
         StretchDIBits(
             hdc,
