@@ -1,19 +1,33 @@
 ﻿  win32_platform.cpp
-D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(32,12): warning C4244: 'initializing': conversion from 'float' to 'u16', possible loss of data
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(19,25): warning C4018: '<': signed/unsigned mismatch
   (compiling source file 'win32_platform.cpp')
   
-D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(33,12): warning C4244: 'initializing': conversion from 'float' to 'u16', possible loss of data
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(21,28): warning C4018: '<': signed/unsigned mismatch
   (compiling source file 'win32_platform.cpp')
   
-D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(34,12): warning C4244: 'initializing': conversion from 'float' to 'u16', possible loss of data
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(37,12): warning C4244: 'initializing': conversion from 'float' to 's32', possible loss of data
   (compiling source file 'win32_platform.cpp')
   
-D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(35,12): warning C4244: 'initializing': conversion from 'float' to 'u16', possible loss of data
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(38,12): warning C4244: 'initializing': conversion from 'float' to 's32', possible loss of data
   (compiling source file 'win32_platform.cpp')
   
-D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\game.cpp(5,1): warning C4005: 'pressed': macro redefinition
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(39,12): warning C4244: 'initializing': conversion from 'float' to 's32', possible loss of data
   (compiling source file 'win32_platform.cpp')
-  D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\game.cpp(4,1):
-  see previous definition of 'pressed'
   
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\renderer.cpp(40,12): warning C4244: 'initializing': conversion from 'float' to 's32', possible loss of data
+  (compiling source file 'win32_platform.cpp')
+  
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\game.cpp(46,21): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'win32_platform.cpp')
+  
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\game.cpp(78,34): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'win32_platform.cpp')
+  
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\game.cpp(125,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'win32_platform.cpp')
+  
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\game.cpp(130,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'win32_platform.cpp')
+  
+D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\win32_platform.cpp(84,22): warning C4305: 'initializing': truncation from 'double' to 'float'
   pong.vcxproj -> D:\Cpp\cpp-exercises-and-courses\Miniprojects\pong\x64\Debug\pong.exe

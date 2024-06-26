@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|solutionrelative:game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|solutionrelative:renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\win32_platform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|solutionrelative:win32_platform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\platform_common.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2738E51-B0BF-45A1-B818-B9D0FFDBBBBB}|pong.vcxproj|solutionrelative:platform_common.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "platform_common.cpp",
+              "DocumentMoniker": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\platform_common.cpp",
+              "RelativeDocumentMoniker": "platform_common.cpp",
+              "ToolTip": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\platform_common.cpp",
+              "RelativeToolTip": "platform_common.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-26T08:54:26.672Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +49,7 @@
               "RelativeDocumentMoniker": "game.cpp",
               "ToolTip": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\game.cpp",
               "RelativeToolTip": "game.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAgwEUAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-25T20:21:23.185Z",
               "EditorCaption": ""
@@ -36,12 +57,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "renderer.cpp",
+              "DocumentMoniker": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\renderer.cpp",
+              "RelativeDocumentMoniker": "renderer.cpp",
+              "ToolTip": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\renderer.cpp",
+              "RelativeToolTip": "renderer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-26T05:21:47.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "win32_platform.cpp",
               "DocumentMoniker": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\win32_platform.cpp",
               "RelativeDocumentMoniker": "win32_platform.cpp",
               "ToolTip": "D:\\Cpp\\cpp-exercises-and-courses\\Miniprojects\\pong\\win32_platform.cpp",
               "RelativeToolTip": "win32_platform.cpp",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGoAAAAzAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHgAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-25T19:40:14.358Z",
               "EditorCaption": ""

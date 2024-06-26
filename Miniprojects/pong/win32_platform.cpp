@@ -81,6 +81,17 @@ int  WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int 
     HDC hdc = GetDC(window);
 
     Input input = {};
+    float delta_time = 0.016;
+
+    LARGE_INTEGER frame_begin_time;
+    QueryPerformanceCounter(&frame_begin_time);
+
+    float performance_frequency;
+    {
+        LARGE_INTEGER perf;
+        QueryPerformanceFrequency(&perf);
+        performance_frequency = (float) perf.QuadPart;
+    }
     while (running) {
         // Input
         MSG message;
@@ -98,14 +109,18 @@ int  WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int 
 
 #define process_button(b, vk)\
 case vk: {\
-    input.buttons[BUTTON_UP].is_down = is_down;\
-    input.buttons[BUTTON_UP].changed = true;\
+    input.buttons[b].changed = is_down != input.buttons[b].is_down;\
+    input.buttons[b].is_down = is_down;\
 } break;
                     switch (vk_code) {
                         process_button(BUTTON_UP, VK_UP);
                         process_button(BUTTON_DOWN, VK_DOWN);
                         process_button(BUTTON_LEFT, VK_LEFT);
                         process_button(BUTTON_RIGHT, VK_RIGHT);
+                        process_button(BUTTON_W, 'W');
+                        process_button(BUTTON_A, 'A');
+                        process_button(BUTTON_S, 'S');
+                        process_button(BUTTON_D, 'D');
                     }
                 } break;
                 default: {
@@ -117,8 +132,7 @@ case vk: {\
         }
 
         // Simulate
-        clear_screen();
-        simulate_game(&input);
+        simulate_game(&input, delta_time);
         // Render
         StretchDIBits(
             hdc,
@@ -127,5 +141,10 @@ case vk: {\
             render_state.memory,
             &render_state.bitmap_info,
             DIB_RGB_COLORS, SRCCOPY);
+
+        LARGE_INTEGER frame_end_time;
+        QueryPerformanceCounter(&frame_end_time);
+        delta_time = (float)(frame_end_time.QuadPart - frame_begin_time.QuadPart) / performance_frequency;
+        frame_begin_time = frame_end_time;
     }
 }
