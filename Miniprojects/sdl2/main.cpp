@@ -1,12 +1,12 @@
-// #include <iostream>
+#include <iostream>
 
-// #include <SDL.h>
+#include <SDL.h>
 
-// int main(int argc, char* argv[]){
-//   if(SDL_Init(SDL_INIT_VIDEO) < 0){
-//     std::cout << "SDL could not be initialized: " << endl;
-//   }
-//   else {
-//     std::cout << "SDL video system is ready" << endl;
-//   }
-// }
+int main(int argc, char* argv[]){
+  if(SDL_Init(SDL_INIT_VIDEO) < 0){
+    std::cout << "SDL could not be initialized: " << endl;
+  }
+  else {
+    std::cout << "SDL video system is ready" << endl;
+  }
+}
