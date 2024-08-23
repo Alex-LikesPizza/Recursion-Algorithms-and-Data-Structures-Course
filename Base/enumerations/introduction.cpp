@@ -15,8 +15,8 @@ int main(){
   // colors = Green; // ok
   // // colors = 2; // Error. Color type accepts ony it's own values 
 
-  enum class Colors {Red, Green, Yellow};
-  enum class Favorite_Things{Lemons, Grapes, Yellow};
+  // enum class Colors {Red, Green, Yellow};
+  // enum class Favorite_Things{Lemons, Grapes, Yellow};
   // cout << boolalpha << (Colors::Yellow == Favorite_Things::Yellow) << endl; // Error
   return 0;
 }
