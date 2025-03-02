@@ -2,9 +2,8 @@
 
 int factorial(int i){
   if(i == 0) return 1;
-  // - head recursion
-  return i * factorial(i - 1); ;
 
+  return i * factorial(i - 1); ;
 }
 
 int tail_factorial(int i, int acc = 1){

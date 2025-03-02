@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <sstream>
 using namespace std;
-
 class Solution{
 public:
   bool isValidPosition(vector<string>& board, int i, int j){
