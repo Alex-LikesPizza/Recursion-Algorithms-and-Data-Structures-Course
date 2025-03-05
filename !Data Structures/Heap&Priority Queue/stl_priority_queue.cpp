@@ -25,8 +25,6 @@ int main(){
   // pq.push(value); // pushes value into queue
   // pq.pop(); // removes element on top
   // pq.top(); // returns element on top
-  // pq.size(); // returns size of queue
-  // pq.empty(); // returns a boolean of empty check
   pq.push(1);
   pq.push(2); 
   pq.push(5); 
@@ -43,7 +41,7 @@ int main(){
 
   priority_queue<int, vector<int>, greater<int>> pq1; // min heap;
   /*
-  std::less(<)
+  std::less(<) // default
   std::greater(>)
   std::less_equal(<=)
   std::greater_equal(>=)
@@ -58,4 +56,12 @@ int main(){
   // Method 3 - using classes
   priority_queue<vector<int>, vector<vector<int>>, CompareVectorSizes<int>> pq3;
 
+
+  // Functions:
+
+  // pq.push(value);     // Inserts 'value' into the priority queue O(log n)
+  // pq.pop();           // Removes the top element O(log n)
+  // pq.top();           // Returns the top element O(1)
+  // pq.empty();         // Returns true if the priority queue is empty O(1)
+  // pq.size();          // Returns the number of elements in the priority queue O(1)
 }
